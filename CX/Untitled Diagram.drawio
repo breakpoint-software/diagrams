@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-07-19T14:23:51.777Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="JMIvDpugeMY9GVXPtNxl" version="20.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-20T10:01:54.944Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="q6NmvwFZ25dwIrCNRUEn" version="20.1.1" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
     <mxGraphModel dx="1038" dy="539" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -32,24 +32,24 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="e0stAx7qCD_DcNNzEamt-17" value="SupportTicket" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
-          <mxGeometry x="310" y="1080" width="160" height="150" as="geometry" />
+          <mxGeometry x="295" y="1080" width="185" height="150" as="geometry" />
         </mxCell>
         <mxCell id="e0stAx7qCD_DcNNzEamt-18" value="+TicketId&#xa;+Title&#xa;+Description&#xa;+CustomerId&#xa;+Status&#xa;+OrderId?&#xa;+IpAddress&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="e0stAx7qCD_DcNNzEamt-17" vertex="1">
-          <mxGeometry y="30" width="160" height="120" as="geometry" />
+          <mxGeometry y="30" width="185" height="120" as="geometry" />
         </mxCell>
         <mxCell id="e0stAx7qCD_DcNNzEamt-19" value="SupportTicketAttachment" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
-          <mxGeometry x="540" y="1080" width="160" height="120" as="geometry" />
+          <mxGeometry x="550" y="1080" width="200" height="120" as="geometry" />
         </mxCell>
         <mxCell id="e0stAx7qCD_DcNNzEamt-20" value="+TicketId&#xa;+FileName&#xa;+FileUrl&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="e0stAx7qCD_DcNNzEamt-19" vertex="1">
-          <mxGeometry y="30" width="160" height="90" as="geometry" />
+          <mxGeometry y="30" width="200" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="e0stAx7qCD_DcNNzEamt-23" value="ChatHistory" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
-          <mxGeometry x="540" y="880" width="160" height="150" as="geometry" />
+        <mxCell id="e0stAx7qCD_DcNNzEamt-23" value="SupportTicketChatHistory" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+          <mxGeometry x="540" y="880" width="210" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="e0stAx7qCD_DcNNzEamt-24" value="+TicketId&#xa;+Message&#xa;+SentDate&#xa;+TicketAttachmentId&#xa;+SenderId&#xa;+ReceiverId" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="e0stAx7qCD_DcNNzEamt-23" vertex="1">
-          <mxGeometry y="30" width="160" height="120" as="geometry" />
+        <mxCell id="e0stAx7qCD_DcNNzEamt-24" value="+Message&#xa;+SentDate&#xa;+TicketAttachmentId&#xa;+SenderId&#xa;+ReceiverId" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="e0stAx7qCD_DcNNzEamt-23" vertex="1">
+          <mxGeometry y="30" width="210" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="e0stAx7qCD_DcNNzEamt-26" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=1.028;exitY=0.194;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="e0stAx7qCD_DcNNzEamt-18" target="e0stAx7qCD_DcNNzEamt-24" edge="1">
+        <mxCell id="e0stAx7qCD_DcNNzEamt-26" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="e0stAx7qCD_DcNNzEamt-18" target="e0stAx7qCD_DcNNzEamt-24" edge="1">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
             <mxPoint x="470" y="1120" as="sourcePoint" />
             <mxPoint x="580" y="950" as="targetPoint" />
@@ -106,11 +106,11 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="9I-AzRIJbB9GTegeeoSH-1" value="ChatMember" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
-          <mxGeometry x="310" y="880" width="160" height="120" as="geometry" />
+        <mxCell id="9I-AzRIJbB9GTegeeoSH-1" value="SupportTicketChatMember" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+          <mxGeometry x="295" y="880" width="185" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="9I-AzRIJbB9GTegeeoSH-2" value="+RoomId&#xa;+UserId&#xa;+SignalRId" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="9I-AzRIJbB9GTegeeoSH-1">
-          <mxGeometry y="30" width="160" height="90" as="geometry" />
+        <mxCell id="9I-AzRIJbB9GTegeeoSH-2" value="+SupportTicketId&#xa;+UserId&#xa;+SignalRId" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="9I-AzRIJbB9GTegeeoSH-1" vertex="1">
+          <mxGeometry y="30" width="185" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
